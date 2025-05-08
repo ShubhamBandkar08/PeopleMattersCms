@@ -20,9 +20,10 @@ describe("Login Page", () => {
         // cy.contains("Welcome").should("be.visible");
     });
 
-    it("Verify tag", () => {
+    it("Verify create New tag", () => {
         sessionPageObject1.homeURL();
-        createTagObject.ClickOnTagMenuOption();
+        createTagObject.createNewTag();
+        
         // Add logic for verifying tags
     });
 });
