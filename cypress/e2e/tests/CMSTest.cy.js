@@ -28,7 +28,7 @@ describe("Login Page", () => {
         cy.wait(2000);
     });
 
-    it("Verify create New Article", () => {
+    it.only("Verify create New Article", () => {
         sessionPageObject1.homeURL();
         cy.wait(2000);
         createNewArticle1.createNewArticle();
