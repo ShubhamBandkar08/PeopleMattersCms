@@ -32,6 +32,7 @@ describe("Login Page", () => {
         sessionPageObject1.homeURL();
         cy.wait(2000);
         createNewArticle1.createNewArticle();
+        cy.wait(2000);
     })
 
     it('verify create New Collection', () => {
@@ -41,11 +42,13 @@ describe("Login Page", () => {
         cy.wait(2000);
     })
 
-    it("Verify create New Collection", () => {
+    it("Verify Collection Search functionality", () => {
         sessionPageObject1.homeURL();
          createCollection1.ClickOncollectionMenuButton();
         cy.wait(2000);  
         createCollection1.enterCollectionName(createCollection1.name);
        
     })
+
+
 })
