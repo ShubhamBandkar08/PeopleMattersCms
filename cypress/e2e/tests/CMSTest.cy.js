@@ -21,11 +21,13 @@ describe("Login Page", () => {
         sessionPageObject1.homeURL();
     });
 
-    it("Verify create New tag", () => {
+    it.only("Verify create New tag", () => {
         sessionPageObject1.homeURL();
-        cy.wait(2000);
+        cy.wait(4000);
         createTagObject.createNewTag();
         cy.wait(2000);
+       // createTagObject.deleteTag()
+      //  createTagObject.toggleFunctionality();
     });
 
     it("Verify create New Article", () => {

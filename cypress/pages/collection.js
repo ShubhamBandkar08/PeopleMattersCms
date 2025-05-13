@@ -3,9 +3,7 @@ export class collectionPage {
 title = `Test Collection ${Math.floor(Math.random() * 900) + 100}`;
 name ='Videos'
     collectionWebElemtents = {
-
-
-
+        
         clickOnCollMenu: "a[value='9'] span[class='ts-menu-label mui-1bw4j2m']",
         clickOnAddNewCollButton: "[class='MuiButton-icon MuiButton-startIcon MuiButton-iconSizeMedium mui-ghkmmz']",
         ETitle:'#\\:ri\\:',//cy.get()
