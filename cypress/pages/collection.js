@@ -44,9 +44,11 @@ export class createNCollection extends collectionPage {
 
     createNewcollection() {
         this.ClickOncollectionMenuButton();
+        cy.wait(2000);
         this.clickOnAddNewCollectionButton();
         cy.wait(2000);
         this.enterTitle(this.title);
+        cy.wait(2000);
         this.clickOnSubmitButton();
         cy.wait(2000)
         this.ClickOncollectionMenuButton();

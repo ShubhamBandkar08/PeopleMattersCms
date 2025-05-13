@@ -9,7 +9,7 @@ module.exports = defineConfig({
     },
   },
   env: {  
-    URL:'https://uat-pm.enpointe.io/login',
-    HOME_URL: 'https://uat-pm.enpointe.io/home'
+    URL:'https://beta-pm.peoplematters.in/login',
+    HOME_URL: 'https://beta-pm.peoplematters.in/home'
   }
 });

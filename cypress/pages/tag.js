@@ -1,7 +1,8 @@
 export class createTag1 {
 
     webElement = {
-        menuTag: ':nth-child(3) > .ts-menu-section-wrapper > :nth-child(4) > .ts-menu-button > .ts-menu-label',
+        menuTag:':nth-child(3) > .ts-menu-section-wrapper > :nth-child(3) > .ts-menu-button > .ts-menu-label',
+  //      : ':nth-child(3) > .ts-menu-section-wrapper > :nth-child(4) > .ts-menu-button > .ts-menu-label',
         //  element not  found error
         clickOnTagButton: "button[class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary max-sm:is-full mui-e7ld5s']",
         enterTagName: '#\\:r3\\:',
@@ -26,8 +27,11 @@ export class createTag1 {
 export class createTag extends createTag1 {
 
     createNewTag() {
+        cy.wait(2000);
         this.ClickOnTagMenuOption();
+        cy.wait(2000);
         this.ClickOnCreateTagButton();
+        cy.wait(2000);
         const randomName = `user_${Math.random().toString(36).substring(2, 8)}`;
         this.EnterTagName(randomName);
         this.ClickOnAddButton();
