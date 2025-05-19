@@ -1,7 +1,7 @@
 class article {
 articleWebElement = {
     
-    clickOnArticleMOption:':nth-child(3) > .ts-menu-section-wrapper > :nth-child(2) > .ts-menu-button > .ts-menu-label',
+    clickOnArticleMOption:':nth-child(2) > .ts-menu-section-wrapper > :nth-child(2) > .ts-menu-button > .ts-menu-label',
     clickOnAddAButton:"[class$='mui-1rxx7yd']",
     clickonPostTypeOption:"div[role='presentation'] li:nth-child(3)",
     eTitle:'#\\:r4\\:',

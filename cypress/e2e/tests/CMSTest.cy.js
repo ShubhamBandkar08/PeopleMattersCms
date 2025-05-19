@@ -21,7 +21,7 @@ describe("Login Page", () => {
         sessionPageObject1.homeURL();
     });
 
-    it.only("Verify create New tag", () => {
+    it("Verify create New tag", () => {
         sessionPageObject1.homeURL();
         cy.wait(4000);
         createTagObject.createNewTag();

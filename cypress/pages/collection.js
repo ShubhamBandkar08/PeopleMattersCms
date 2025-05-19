@@ -4,9 +4,9 @@ title = `Test Collection ${Math.floor(Math.random() * 900) + 100}`;
 name ='Videos'
     collectionWebElemtents = {
         
-        clickOnCollMenu: "a[value='9'] span[class='ts-menu-label mui-1bw4j2m']",
+        clickOnCollMenu: ":nth-child(2) > .ts-menu-section-wrapper > :nth-child(3) > .ts-menu-button > .ts-menu-label",
         clickOnAddNewCollButton: "[class='MuiButton-icon MuiButton-startIcon MuiButton-iconSizeMedium mui-ghkmmz']",
-        ETitle:'#\\:ri\\:',//cy.get()
+        ETitle:'#\\:re\\:',//cy.get()
         ClickOnSubButton: "[type='submit']",
         ClickAllTab:'#mui-p-99778-T-2',
         searchBox:"[placeholder='Search collections...']",

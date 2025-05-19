@@ -1,7 +1,9 @@
 export class createTag1 {
 
     webElement = {
-        menuTag:':nth-child(3) > .ts-menu-section-wrapper > :nth-child(3) > .ts-menu-button > .ts-menu-label',
+
+       menuTag:':nth-child(4) > .ts-menu-section-wrapper > :nth-child(4) > .ts-menu-button > .ts-menu-label',
+        
   //      : ':nth-child(3) > .ts-menu-section-wrapper > :nth-child(4) > .ts-menu-button > .ts-menu-label',
         //  element not  found error
         clickOnTagButton: "button[class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary max-sm:is-full mui-e7ld5s']",
@@ -34,11 +36,7 @@ export class createTag1 {
         cy.wait(2000);
         cy.get(this.webElement.popyes).click({ force: true })
     }
-    deleteTagfunctionality(randomName) {
-       cy.contains('tr',randomName).click({ force: true })
-        cy.wait(2000);
-        cy.get(this.webElement.popyes).click({ force: true })
-    }
+    
 
 }
 
@@ -60,9 +58,5 @@ export class createTag extends createTag1 {
         this.clickOnToggle();
         cy.wait(2000);
     }
-    deleteTag() {
-        cy.wait(2000);
-        this.deleteTagfunctionality(this.randomName);
-        cy.wait(2000);
-    }
+    
 }
